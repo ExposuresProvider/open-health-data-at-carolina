@@ -1,6 +1,6 @@
 # Open Health Data @ Carolina
 
-The intent of this repo is to support our work with NC TraCS to establish an instance of [COHD (Columbia Open Health Data])(http://cohd.io/about.html) at UNC Health.
+The intent of this repo is to support our work with NC TraCS to establish an instance of [COHD (Columbia Open Health Data]) (http://cohd.io/about.html) at UNC Health.
 
 Here is a list of required resources and/or helpful information:
 
