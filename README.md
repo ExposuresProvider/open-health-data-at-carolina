@@ -13,3 +13,5 @@ Here is a list of required resources and/or helpful information:
    - Output/download files:https://figshare.com/collections/Columbia_Open_Health_Data_a_database_of_EHR_prevalence_and_co-occurrence_of_conditions_drugs_and_procedures/4151252
 
    - Additional notes: original COHD datasets were a total of 5GBs of csv files (uncompressed) and 1.3GB when compressed
+
+NC TraCS: Phase I estimate is 50 hours @ $115/hour, per Kellie Walters on 3/28/2024.
