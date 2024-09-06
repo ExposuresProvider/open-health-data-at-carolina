@@ -19,3 +19,4 @@ NC TraCS and CDWH Oversight Committee:
 - Project comprises two phases: (1) Phase I is instantiation of COHD @ UNC Health (approved to move forward); (2) Phase II is extension of COHD to incorporate exposures data (approval pending expert determination of privacy risks).
 
 -   Phase I estimate is 50 hours @ $115/hour, per Kellie Walters on 3/28/2024.
+-   James Champion tranferred files to Goldfish on 9/3/2024, with an additional file added 9/5/2024.
