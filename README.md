@@ -14,6 +14,8 @@ Here is a list of required resources and/or helpful information:
 
    - Additional notes: original COHD datasets were a total of 5GBs of csv files (uncompressed) and 1.3GB when compressed
 
+   - [COHD CSV output files -> KGX script](https://drive.google.com/drive/folders/1AT_-7OUsovDxwt1O5MepLILfgTXnWu56?usp=drive_link)
+     
 NC TraCS and CDWH Oversight Committee: 
 
 - Project comprises two phases: (1) Phase I is instantiation of COHD @ UNC Health (approved to move forward); (2) Phase II is extension of COHD to incorporate exposures data (approval pending expert determination of privacy risks).
