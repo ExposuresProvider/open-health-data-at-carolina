@@ -15,6 +15,16 @@ Here is a list of required resources and/or helpful information:
    - Additional notes: original COHD datasets were a total of 5GBs of csv files (uncompressed) and 1.3GB when compressed
 
    - [COHD CSV output files -> KGX script](https://drive.google.com/drive/folders/1AT_-7OUsovDxwt1O5MepLILfgTXnWu56?usp=drive_link)
+
+   - KGX file: Two files: concept_pair_counts_2018-2022_randomized_mincount-11_N-2306126_hierarchical_20240826-1228.txt file [282M concept co-occurrences] and concept_pair_counts_yearly_randomized_mincount-11_20240901-055303.txt [30M concept co-occurrences]. First file is for the total five-year sample; second file is for each year of the five-year sample. First file is for KGX file generation.
+
+     _Notes from Casey:
+   The yearly file gives you the co-occurrence counts on a yearly basis (e.g., in 2018, in 2019, in 2020, etc). It is intended more as a data quality check to see if the counts are relatively consistent from year to year (this was created in response to a reviewer for the COHD paper). For the most part, you won't need the yearly file, unless you plan to do something interesting about how relationships change over time. If you're wondering why there's much fewer concept pairs in this file, it's probably because a lot of the rarer concepts drop down below the mincount threshold when only including 1 year's worth of data._
+
+- Biolink mappings for KGX file: 26019 OMOP concept ids in the OHD@Carolina dataset that are not included in Casey's omop_id-to-biolink-id mapping file. Based on the comments below, there are 13K missing mappings (likely due to highly granular OMOP concepts) and 13K (26K-13K) missing mappings due to institutional differences
+
+  _Note from Casey:
+   I just checked our database, and we have 74,555 distinct concepts with count data. Of those 61,360 have mappings, and 13,195 don't. We only created mappings for concepts for which we have data, so your 26k number will include some caused by institutional differences, but there are still a large number of concepts that don't get mapped for us.__
      
 NC TraCS and CDWH Oversight Committee: 
 
@@ -22,3 +32,7 @@ NC TraCS and CDWH Oversight Committee:
 
 -   Phase I estimate is 50 hours @ $115/hour, per Kellie Walters on 3/28/2024.
 -   James Champion tranferred files to Goldfish on 9/3/2024, with an additional file added 9/5/2024.
+
+_Notes:
+
+1. I am using concept_pair_counts_2018-2022_randomized_mincount-11_N-2306126_hierarchical_20240826-1228.txt file to create kg which includes about 282M concept co-occurrences. There is another file concept_pair_counts_yearly_randomized_mincount-11_20240901-055303.txt which includes about 30M concept co-occurrences along with year and frequency.  _
