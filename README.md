@@ -24,15 +24,16 @@ Here is a list of required resources and/or helpful information:
 - Biolink mappings for KGX file: 26019 OMOP concept ids in the OHD@Carolina dataset that are not included in Casey's omop_id-to-biolink-id mapping file. Based on the comments below, there are 13K missing mappings (likely due to highly granular OMOP concepts) and 13K (26K-13K) missing mappings due to institutional differences
 
   _Note from Casey:
-   I just checked our database, and we have 74,555 distinct concepts with count data. Of those 61,360 have mappings, and 13,195 don't. We only created mappings for concepts for which we have data, so your 26k number will include some caused by institutional differences, but there are still a large number of concepts that don't get mapped for us.__
-     
+   I just checked our database, and we have 74,555 distinct concepts with count data. Of those 61,360 have mappings, and 13,195 don't. We only created mappings for concepts for which we have data, so your 26k number will include some caused by institutional differences, but there are still a large number of concepts that don't get mapped for us._
+
+- Nested attributes: https://github.com/WengLab-InformaticsResearch/cohd_api/tree/master/kgx
+
 NC TraCS and CDWH Oversight Committee: 
 
 - Project comprises two phases: (1) Phase I is instantiation of COHD @ UNC Health (approved to move forward); (2) Phase II is extension of COHD to incorporate exposures data (approval pending expert determination of privacy risks).
 
--   Phase I estimate is 50 hours @ $115/hour, per Kellie Walters on 3/28/2024.
--   James Champion tranferred files to Goldfish on 9/3/2024, with an additional file added 9/5/2024.
+   - Phase I estimate is 50 hours @ $115/hour, per Kellie Walters on 3/28/2024.
+   - James Champion tranferred files to Goldfish on 9/3/2024, with an additional file added 9/5/2024.
 
-_Notes:
-
-1. I am using concept_pair_counts_2018-2022_randomized_mincount-11_N-2306126_hierarchical_20240826-1228.txt file to create kg which includes about 282M concept co-occurrences. There is another file concept_pair_counts_yearly_randomized_mincount-11_20240901-055303.txt which includes about 30M concept co-occurrences along with year and frequency.  _
+   _Notes:
+I am using concept_pair_counts_2018-2022_randomized_mincount-11_N-2306126_hierarchical_20240826-1228.txt file to create kg which includes about 282M concept co-occurrences. There is another file concept_pair_counts_yearly_randomized_mincount-11_20240901-055303.txt which includes about 30M concept co-occurrences along with year and frequency._
