@@ -18,6 +18,8 @@ Here is a list of required resources and/or helpful information:
 
    - KGX file: Two files: concept_pair_counts_2018-2022_randomized_mincount-11_N-2306126_hierarchical_20240826-1228.txt file [282M concept co-occurrences] and concept_pair_counts_yearly_randomized_mincount-11_20240901-055303.txt [30M concept co-occurrences]. First file is for the total five-year sample; second file is for each year of the five-year sample. First file is for KGX file generation.
 
+   - Exposures Provider's OHD@Carolina repo: https://github.com/ExposuresProvider/ehr_prevalence 
+
      _Notes from Casey:
    The yearly file gives you the co-occurrence counts on a yearly basis (e.g., in 2018, in 2019, in 2020, etc). It is intended more as a data quality check to see if the counts are relatively consistent from year to year (this was created in response to a reviewer for the COHD paper). For the most part, you won't need the yearly file, unless you plan to do something interesting about how relationships change over time. If you're wondering why there's much fewer concept pairs in this file, it's probably because a lot of the rarer concepts drop down below the mincount threshold when only including 1 year's worth of data._
 
