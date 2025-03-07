@@ -1,6 +1,6 @@
 # Open Health Data @ Carolina
 
-The intent of this repo is to support our work with NC TraCS to establish an instance of [COHD (Columbia Open Health Data)](http://cohd.io/about.html) at UNC Health. Open Health Data will expose patient counts and prevalence estimates for patient demographics, diagnoses, medications, and procedures, and the co-occurrences between them. The EHR results will be derived from UNC Health's OMOP database and include data on ~6M patients over years 2018 through 2022.
+The intent of this repo is to support our work with NC TraCS to establish an instance of [COHD (Columbia Open Health Data)](http://cohd.io/about.html) at UNC Health. Open Health Data will expose patient counts and prevalence estimates for patient demographics, diagnoses, medications, and procedures, and the co-occurrences between them. The EHR results will be derived from UNC Health's OMOP database and include data on ~2M patients over years 2018 through 2022. **Update:** Total number of patients in final cohort = 2,344,578.
 
 Here is a list of required resources and/or helpful information:
 
