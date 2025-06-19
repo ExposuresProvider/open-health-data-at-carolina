@@ -37,5 +37,4 @@ NC TraCS and CDWH Oversight Committee:
    - Phase I estimate is 50 hours @ $115/hour, per Kellie Walters on 3/28/2024.
    - James Champion tranferred files to Goldfish on 9/3/2024, with an additional file added 9/5/2024.
 
-   _Notes:
-I am using concept_pair_counts_2018-2022_randomized_mincount-11_N-2306126_hierarchical_20240826-1228.txt file to create kg which includes about 282M concept co-occurrences. There is another file concept_pair_counts_yearly_randomized_mincount-11_20240901-055303.txt which includes about 30M concept co-occurrences along with year and frequency._
+   _Notes: Uses concept_pair_counts_2018-2022_randomized_mincount-11_N-2306126_hierarchical_20240826-1228.txt file to create kg which includes about 282M concept co-occurrences. There is another file concept_pair_counts_yearly_randomized_mincount-11_20240901-055303.txt which includes about 30M concept co-occurrences along with year and frequency._
