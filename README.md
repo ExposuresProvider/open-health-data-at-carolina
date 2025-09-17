@@ -33,8 +33,101 @@ Here is a list of required resources and/or helpful information:
 NC TraCS and CDWH Oversight Committee: 
 
 - Project comprises two phases: (1) Phase I is instantiation of COHD @ UNC Health (approved to move forward); (2) Phase II is extension of COHD to incorporate exposures data (approval pending expert determination of privacy risks).
-
    - Phase I estimate is 50 hours @ $115/hour, per Kellie Walters on 3/28/2024.
    - James Champion tranferred files to Goldfish on 9/3/2024, with an additional file added 9/5/2024.
+ 
+**Update from November 2024:**
+
+_Evan, Max, Casey, Kara exchange_
+
+Ok, I put up a first draft of this.. https://automat-dev.apps.renci.org/cohd/ (openapi here https://automat-dev.apps.renci.org/#/cohd)
+A few things:
+unfortunately a lot of node ids were not in Node Norm (see file attached), these get discarded with any edges attached to them, causing us to lose half of the edges
+sorry I should've noticed this earlier but can we make it "category" instead of "categories" to match the biolink model and our normal format (even though it should probably be categories).. this is currently causing the category to show up normally and as an attribute in TRAPI
+it looks like infores:automat-cohd is not in the infores catalog yet, but it's mentioned in the infores catalog under cqs, is that what we want to use for this automat?
+(edited)
+[12:05 AM] Additionally, I still need to fix a couple things in plater to get this to work right, but I thought I'd go ahead and put this up so we can start addressing these issues:
+supporting_data_source is not being handled correctly yet
+score is not being put in the right place yet
+[12:09 AM] norm_node_failures.log
+RXCUI:1860133
+CPT:99213
+SNOMEDCT:44749005
+CPT:77013
+RXCUI:797835
+CPT:71010
+CPT:76937
+CPT:31231
+CPT:73610
+CPT:47610
+CPT:36620
+RXCUI:1729198
+SNOMEDCT:110466009
+CPT:88305
+CPT:50592
+RXCUI:900963
+RXCUI:1860240
+RXCUI:1735004
+RXCUI:1860464
+CPT:76817
+CPT:88311
+CPT:42410
+RXCUI:797836
+RXCUI:1740468
+CPT:99223
+CPT:61782
+CPT:93306
+CPT:99214
+CPT:99254
+CPT:27705
+CPT:26785
+CPT:11641
+CPT:73590
+CPT:99469
+RXCUI:665002
+CPT:00102
+SNOMEDCT:243787009
+SNOMEDCT:709479007
+CPT:30465
+CPT:73140
+RXCUI:1794431
+RXCUI:847624
+CPT:99233
+CPT:36825
+RXCUI:1812184
+CPT:20912
+RXCUI:1740918
+RXCUI:1795345
+CPT:34151
+CPT:27513
+SNOMEDCT:710955000
+CPT:31575
+RXCUI:1795608
+CPT:73540
+RXCUI:1860237
+SNOMEDCT:41587001
+CPT:74000
+CPT:99232
+RXCUI:1732015
+CPT:00100
+SNOMEDCT:60108003
+CPT:77001
+CPT:36450
+CPT:73030
+CPT:11470
+CPT:31292
+CPT:73560
+SNOMEDCT:199165004
+CPT:76816
+RXCUI:328317
+RXCUI:1737234
+CPT:44135
+CPT:88307
+CPT:00548
+RXCUI:1928300
+RXCUI:1861733
+CPT:99291
+CPT:88304
+
 
    _Notes: Uses concept_pair_counts_2018-2022_randomized_mincount-11_N-2306126_hierarchical_20240826-1228.txt file to create kg which includes about 282M concept co-occurrences. There is another file concept_pair_counts_yearly_randomized_mincount-11_20240901-055303.txt which includes about 30M concept co-occurrences along with year and frequency._
