@@ -131,6 +131,9 @@ CPT:88304
 
 There is also an issue with how nested attributes were handled, but there is no point in resolving this issue given that Translator is moving away from Neo4J.
 
+**Additional update:**
+Both infores:automat-cohd and infores:automat-open-health-data-carolina will need to be added to the InfoRes catalog if exposed via the public Automat endpoint.
+
 
 
    _Notes: Uses concept_pair_counts_2018-2022_randomized_mincount-11_N-2306126_hierarchical_20240826-1228.txt file to create kg which includes about 282M concept co-occurrences. There is another file concept_pair_counts_yearly_randomized_mincount-11_20240901-055303.txt which includes about 30M concept co-occurrences along with year and frequency._
