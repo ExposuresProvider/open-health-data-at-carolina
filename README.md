@@ -28,6 +28,8 @@ Here is a list of required resources and/or helpful information:
   _Note from Casey:
    I just checked our database, and we have 74,555 distinct concepts with count data. Of those 61,360 have mappings, and 13,195 don't. We only created mappings for concepts for which we have data, so your 26k number will include some caused by institutional differences, but there are still a large number of concepts that don't get mapped for us._
 
+     _Notes: Uses concept_pair_counts_2018-2022_randomized_mincount-11_N-2306126_hierarchical_20240826-1228.txt file to create kg which includes about 282M concept co-occurrences. There is another file concept_pair_counts_yearly_randomized_mincount-11_20240901-055303.txt which includes about 30M concept co-occurrences along with year and frequency._
+
 - Nested attributes: https://github.com/WengLab-InformaticsResearch/cohd_api/tree/master/kgx
 
 NC TraCS and CDWH Oversight Committee: 
@@ -40,17 +42,14 @@ NC TraCS and CDWH Oversight Committee:
 
 _Evan, Max, Casey, Kara exchange_
 
-Ok, I put up a first draft of this.. https://automat-dev.apps.renci.org/cohd/ (openapi here https://automat-dev.apps.renci.org/#/cohd)
-A few things:
-unfortunately a lot of node ids were not in Node Norm (see file attached), these get discarded with any edges attached to them, causing us to lose half of the edges
-sorry I should've noticed this earlier but can we make it "category" instead of "categories" to match the biolink model and our normal format (even though it should probably be categories).. this is currently causing the category to show up normally and as an attribute in TRAPI
-it looks like infores:automat-cohd is not in the infores catalog yet, but it's mentioned in the infores catalog under cqs, is that what we want to use for this automat?
-(edited)
-[12:05 AM] Additionally, I still need to fix a couple things in plater to get this to work right, but I thought I'd go ahead and put this up so we can start addressing these issues:
-supporting_data_source is not being handled correctly yet
-score is not being put in the right place yet
-[12:09 AM] norm_node_failures.log
-RXCUI:1860133
+1. Evan deployed COHD to: https://automat-dev.apps.renci.org/cohd/ (openapi here https://automat-dev.apps.renci.org/#/cohd)
+2. A number of node CURIES did not normalize in Node Normalizer.
+3. biolink:categories should be changed to biolink:category.
+4. infores:automat-cohd (and infores:auotmat-open-health-data-carolina) need to be added to the InfoRes catalog.
+5. supporting_data_source is not yet handled correctly.
+6. Nested attributes remain an issue, although they won't be after we move away from Neo4J.
+
+'''RXCUI:1860133
 CPT:99213
 SNOMEDCT:44749005
 CPT:77013
@@ -127,13 +126,5 @@ CPT:00548
 RXCUI:1928300
 RXCUI:1861733
 CPT:99291
-CPT:88304
+CPT:88304```
 
-There is also an issue with how nested attributes were handled, but there is no point in resolving this issue given that Translator is moving away from Neo4J.
-
-**Additional update:**
-Both infores:automat-cohd and infores:automat-open-health-data-carolina will need to be added to the InfoRes catalog if exposed via the public Automat endpoint.
-
-
-
-   _Notes: Uses concept_pair_counts_2018-2022_randomized_mincount-11_N-2306126_hierarchical_20240826-1228.txt file to create kg which includes about 282M concept co-occurrences. There is another file concept_pair_counts_yearly_randomized_mincount-11_20240901-055303.txt which includes about 30M concept co-occurrences along with year and frequency._
