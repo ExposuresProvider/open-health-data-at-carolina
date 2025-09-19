@@ -49,7 +49,7 @@ _Evan, Max, Casey, Kara exchange_
 5. supporting_data_source is not yet handled correctly.
 6. Nested attributes remain an issue, although they won't be after we move away from Neo4J.
 
-'''RXCUI:1860133
+```RXCUI:1860133
 CPT:99213
 SNOMEDCT:44749005
 CPT:77013
