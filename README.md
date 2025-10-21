@@ -45,7 +45,7 @@ _Evan, Max, Casey, Kara exchange_
 1. Evan deployed COHD to: https://automat-dev.apps.renci.org/cohd/ (openapi here https://automat-dev.apps.renci.org/#/cohd)
 2. A number of node CURIES did not normalize in Node Normalizer.
 3. biolink:categories should be changed to biolink:category.
-4. infores:automat-cohd (and infores:auotmat-open-health-data-carolina) need to be added to the InfoRes catalog.
+4. infores:automat-cohd (and infores:auotmat-open-health-data-carolina) need to be added to the InfoRes catalog. DONE
 5. supporting_data_source is not yet handled correctly.
 6. Nested attributes remain an issue, although they won't be after we move away from Neo4J.
 
